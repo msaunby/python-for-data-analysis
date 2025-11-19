@@ -1,0 +1,1 @@
+docker run --volume $(pwd)/python_for_data_analysis:/opt/notebooks --rm -it -p 8888:8888 cfrrjupyter:latest

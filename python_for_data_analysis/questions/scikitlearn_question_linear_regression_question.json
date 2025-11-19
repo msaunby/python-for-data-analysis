@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Given the linear regression model above, between the wind speed and NO₂ concentrations, based on the intercept and slope approximation, what would be the expected NO₂ concentration when the wind speed is 15 km/h?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "18.04",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "12.67",
+                "correct": false,
+                "feedback": "That's too low. Consider the slope again."
+            },
+            {
+                "answer": "21.35",
+                "correct": false,
+                "feedback": "That's too high. Check your math."
+            },
+            {
+                "answer": "15.00",
+                "correct": false,
+                "feedback": "This might be a guess. Try recalculating using the model."
+            }
+        ]
+    }
+]

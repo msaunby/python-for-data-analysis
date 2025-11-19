@@ -1,0 +1,18 @@
+[
+    {
+        "question": "Enter the number of rows that are within the dataframe",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "32832",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "8",
+                "correct": false,
+                "feedback": "Thats the number of columns!"
+            }
+        ]
+    }
+]
