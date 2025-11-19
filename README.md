@@ -8,6 +8,15 @@ Conda environment and notes for remote delivery
 ### [Self-study notes](https://coding-for-reproducible-research.github.io/CfRR_Courses/course_homepages/python.html)
 
 
+## IMPORTANT
+
+To fetch the course content -
+
+```
+git clone --depth 1  --branch master https://github.com/coding-for-reproducible-research/CfRR_Courses.git
+cp -r CfRR_Courses/individual_modules/python_for_data_analysis/ python_for_data_analysis
+```
+
 ## Running in docker
 
 https://www.anaconda.com/docs/getting-started/working-with-conda/integrations/docker
