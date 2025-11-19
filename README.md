@@ -1,6 +1,8 @@
 # python-for-data-analysis
 Conda environment and notes for remote delivery
 
+* Michael Saunby, November 2025
+
 ## CfRR Python for Data Analysis
 
 ### [Introduction](https://coding-for-reproducible-research.github.io/CfRR_Courses/individual_modules/section_landing_pages/python_for_data_analysis.html)
@@ -10,7 +12,9 @@ Conda environment and notes for remote delivery
 
 ## IMPORTANT
 
-To fetch the course content -
+See the CfRR website at https://coding-for-reproducible-research.github.io/CfRR_Courses/home_page.html and GitHub repository at https://github.com/coding-for-reproducible-research 
+
+Course content is updated from time to time. To fetch the latest course content -
 
 ```
 git clone --depth 1  --branch master https://github.com/coding-for-reproducible-research/CfRR_Courses.git
@@ -19,22 +23,13 @@ cp -r CfRR_Courses/individual_modules/python_for_data_analysis/ python_for_data_
 
 ## Running in docker
 
-https://www.anaconda.com/docs/getting-started/working-with-conda/integrations/docker
-
-https://hub.docker.com/r/continuumio/miniconda3
-
-```
- docker run -i -t -p 8888:8888 continuumio/miniconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir \
-/opt/notebooks && /opt/conda/bin/jupyter notebook \
---notebook-dir=/opt/notebooks --ip='*' --port=8888 \
---no-browser --allow-root"
-```
-
-https://towardsdatascience.com/dockerizing-jupyter-projects-39aad547484a/
+### Build the container
 
 ```
 docker build -t cfrrjupyter:latest .
 ```
+
+### Run the container
 
 ```
 ## With copy of data - edits will be lost
@@ -43,3 +38,5 @@ docker build -t cfrrjupyter:latest .
 ## With mounted volume
 docker run --volume $(pwd)/python_for_data_analysis:/opt/notebooks --rm -it -p 8888:8888 cfrrjupyter:latest
 ```
+
+Or just run ```start-jupyter.sh```
