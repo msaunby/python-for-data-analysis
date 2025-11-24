@@ -6,7 +6,9 @@ RUN conda install \
     scikit-learn \ 
     matplotlib \
     jupyterlab
- 
+
+ENV JUPYTER_TOKEN=token
+
 # Pip installs
 RUN pip install \
     jupyterquiz \
